@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* SorteadorApplication
+web: java -jar -Dserver.port=$PORT target/sorteador.war
