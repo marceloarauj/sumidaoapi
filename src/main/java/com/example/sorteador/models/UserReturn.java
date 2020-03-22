@@ -1,9 +1,11 @@
 package com.example.sorteador.models;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Table(name="participante")
+@Entity
 public class UserReturn {
 
     @Column(name = "nick")
