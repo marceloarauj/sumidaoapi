@@ -1,10 +1,18 @@
 package com.example.sorteador.models;
 
+import javax.persistence.Column;
+import javax.persistence.Table;
+
+@Table(name="participante")
 public class UserReturn {
 
+    @Column(name = "nick")
     private String nick;
+    @Column(name = "ip")
     private String ip;
+    @Column(name = "classe")
     private long classe;
+    @Column(name = "pontuacao")
     private long pontuacao;
 
     public UserReturn(){}
