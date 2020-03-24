@@ -15,8 +15,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     {
      security.httpBasic().disable();
      security.csrf().disable();
-
-     security.requiresChannel().requestMatchers(r -> r.getHeader("X-Forwarded-Proto") != null).requiresSecure();
     }
 
     
